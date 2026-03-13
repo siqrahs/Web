@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cool Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul id="menu">
+                <li data-section="stats">Stats</li>
+                <li data-section="game">Game</li>
+                <li data-section="bug">Bug</li>
+                <li data-section="questions">Pertanyaan</li>
+                <li data-section="contact">Contact Me</li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="stats" class="active">
+            <h2>Stats</h2>
+            <p>Pengunjung: <span id="visitorCount">0</span></p>
+        </section>
+
+        <section id="game">
+            <h2>Game</h2>
+            <p>Ini tempat untuk rekomendasi game VN dan lainnya 🎮</p>
+        </section>
+
+        <section id="bug">
+            <h2>Bug</h2>
+            <p>Laporan bug bisa dikirim di sini 🐞</p>
+        </section>
+
+        <section id="questions">
+            <h2>Pertanyaan</h2>
+            <p>Ajukan pertanyaanmu di sini 💡</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Nama" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <textarea placeholder="Pesan" required></textarea><br>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+              </html>
